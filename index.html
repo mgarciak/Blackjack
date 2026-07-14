@@ -18,9 +18,9 @@
     <div id="divBotones" class="col text-center">
     
 
-        <button id ="btnNuevo" class="btn btn-danger">Tornar a jugar</button>
-        <button id ="btnPedir" class="btn btn-primary">Demanar carta</button>
-        <button id ="btnDetener" class="btn btn-primary">Detenir</button>
+        <button id ="btnNuevo" class="btn btn-danger">Començar el joc</button>
+        <button id ="btnPedir" disabeled="disabeled" class="btn btn-primary">Demanar carta</button>
+        <button id ="btnDetener" disabeled="disabeled" class="btn btn-primary">Detenir</button>
     
     </div>
    </div>
@@ -29,7 +29,7 @@
         <div class="col">
 
             <h1>Jugador 1 - <small>0</small></h1>
-            <div id="jugador-cartas">
+            <div id="jugador-cartas" class="divCartas">
                 <!-- <img class="carta" src="assets/cartas/2C.png"> -->
             </div>
 
@@ -40,7 +40,7 @@
         <div class="col">
 
             <h1>Bot - <small>0</small></h1>
-            <div id="bot-cartas">
+            <div id="bot-cartas" class="divCartas">
                 <!-- <img class="carta" src="assets/cartas/3C.png"> -->
             </div>
 
@@ -49,6 +49,17 @@
     
 
    <script src="assets/js/underscore-min.js"></script>
-    <script src="assets/js/juego.js"></script>
+   <script src="assets/js/juego.js"></script>
+
+   <script>
+
+        //inicializarJuego();
+        console.log(myMain);
+
+        document.querySelector('#btnNuevo').addEventListener('click', () => {
+            myMain.nuevoJuego();
+        });
+
+   </script>
 </body>
 </html>
