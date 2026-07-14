@@ -20,7 +20,7 @@ Juego de cartas Blackjack desarrollado con JavaScript.
 1. Clona el repositorio
 
 ```bash
-git clone https://github.com/mgarciak/blackjack-js.git
+git clone https://github.com/mgarciak/Blackjack.git
 ```
 
 2. Abre `index.html` en el navegador.
